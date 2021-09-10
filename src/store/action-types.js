@@ -1,0 +1,1 @@
+export const APP_SET_USER_INFO = "APP_SET_USER_INFO"
