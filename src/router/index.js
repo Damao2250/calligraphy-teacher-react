@@ -1,15 +1,34 @@
 import React from "react";
-import Login from "../views/Login/Login";
-import { HashRouter } from "react-router-dom"
+import { HashRouter, Switch, Route } from "react-router-dom";
+import App from "./../App";
+// import Login from "./../views/Login/Login";
 
-class Router extends React.Component {
+// export const routes = [
+//   {
+//     title:"app",
+//     path: "/",
+//     name: "app",
+//     component: App
+//   },
+//   {
+//     title: "login",
+//     name: "login",
+//     path: "/login",
+//     component: Login
+//   }
+// ]
+
+class XRouter extends React.Component {
   render() {
     return (
       <HashRouter>
-        <Login />
+        <Switch>
+          {/* <Route path="/login" component={Login} /> */}
+          <Route path="/" component={App} />
+        </Switch>
       </HashRouter>
     )
   }
 }
 
-export default Router
+export default XRouter
